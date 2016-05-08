@@ -1,0 +1,280 @@
+/* General CSS */
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	background-image: url('images/background6.jpg');
+	background-repeat: repeat;
+
+}
+
+body.Ind{
+	overflow: hidden;
+}
+
+@font-face {
+    font-family: 'squared_displayregular';
+    src: url('font/sd-webfont.eot');
+    src: url('font/sd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/sd-webfont.woff2') format('woff2'),
+         url('font/sd-webfont.woff') format('woff'),
+         url('font/sd-webfont.ttf') format('truetype'),
+         url('font/sd-webfont.svg#squared_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'squares_boldregular';
+    src: url('font/squares_bold_free-webfont.eot');
+    src: url('font/squares_bold_free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/squares_bold_free-webfont.woff2') format('woff2'),
+         url('font/squares_bold_free-webfont.woff') format('woff'),
+         url('font/squares_bold_free-webfont.ttf') format('truetype'),
+         url('font/squares_bold_free-webfont.svg#squares_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* End of General CSS */
+
+/* Index CSS */
+
+/* Nav Bar CSS */
+.row{
+	height: 100%;
+	color: black;
+	z-index: 1;
+}
+
+.buttontop{
+	position: absolute;
+	right: 0.5%;
+	top: 1%;
+	text-align: right;
+	z-index: 10;
+}
+
+.buttontop > button{
+	background: transparent;
+	border: none;
+	color: #0D98BA;
+	font-family: 'squares_boldregular';
+	font-size: 120%;
+	padding-top: 1%;
+	text-shadow: 1px 1px 3px black;
+}
+
+.brand{
+	position: absolute;
+	left: 1%;
+	top: 0.5%;
+
+}
+
+.brand > span {
+	color: #0D98BA;
+	font-family: 'squares_boldregular';
+	font-size: 200%;
+	text-shadow: 1px 1px 3px black;
+}
+
+/* End of Nav Bar CSS */
+
+/* Index Title CSS */
+.vcenter{
+	position: relative;
+	top: 29%;
+}
+
+#R{
+	font-size: 750%;
+	font-family: 'squares_boldregular';
+}
+
+#Line{
+	font-size: 900%;
+	font-family: 'squared_displayregular';
+}
+
+#Las{
+	font-size: 650%;
+	font-family: 'squares_boldregular';
+}
+
+.BMS > span{
+	font-size: 175%;
+	font-family: 'squares_boldregular';
+	color: #0D98BA;
+	text-shadow: 2px 2px 5px black;
+	
+}
+
+#R, #Line, #Las {
+	line-height: 0.9em;
+	color: #0D98BA;
+	text-shadow: 2px 2px 5px black;
+}	
+
+#R, #Line, #BMS, #Las{
+	white-space: nowrap;
+}
+/* End of Index Title CSS */
+
+/* End of Index CSS */
+
+.navbar-custom{
+	background: transparent;
+	border: none;
+	color: #0D98BA;
+	font-family: 'squares_boldregular';
+}
+
+.navbar-custom .navbar-brand{
+	color: #0D98BA;
+}
+
+.navbar-custom .navbar-brand:hover{
+	color: yellow;
+}
+
+.navbar-custom .navbar-nav > li > a{
+	color: #0D98BA;
+}
+
+.navbar-custom .navbar-nav > li > a:visited {
+	color: #0D98BA;
+}
+
+.navbar-custom .navbar-nav > li > a:hover{
+	color: yellow;
+}
+
+.navbar-custom .navbar-nav > li > a:focus{
+  color: yellow;
+}
+
+.navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+	color: #0D98BA;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: yellow;
+	background-color: transparent;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+	color: purple;
+	background-color: blue;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+	color: orange;
+	background-color: black;
+}
+
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  color: yellow;
+  background-color: transparent;
+}
+
+.navbar-custom .dropdown-menu{
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-custom .dropdown-menu .divider{
+	background: yellow;
+}
+
+#R:hover, #Line:hover, #Las:hover, .BMS > span:hover{
+	color: yellow;
+	cursor: default;
+}
+
+
+.thumbnail{
+	background-color: rgba(13,152,186,0.05);
+	border: none;
+}
+	
+.thumbnail:hover{
+	background-color: rgba(255,255,0,0.05);
+}
+
+@media (max-width: 768px)
+{
+	#R, #Las{
+		font-size: 300%;
+	}
+
+	#Line{
+		font-size: 375%;
+	}
+
+	.BMS{
+		font-size: 75%;
+	}
+}
+
+.aboutme{
+	color: #0D98BA;
+	/* text-align: justify; */
+	margin-bottom: 30px;
+	background: rgba(13,152,186,0.05);
+	border: 1px solid #0D98BA;
+	padding: 20px;
+
+}
+
+#profile{
+	float: right;
+	height: 150px; 
+	width: 150px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.aboutme hr{
+	border-top: 1px solid #0D98BA;
+	/* margin-left: -20px; */
+	/* margin-right: -20px; */
+}
+
+.aboutme span{
+	font-size: 1.5em;
+}
+
+.caption h3,p{
+	color: #0D98BA;
+	/* text-align: center; */
+}
+
+/* .caption h3{
+	text-align: center;
+} */
+
+.caption h3:hover{
+	color: yellow;
+}
+
+.blog img{
+	padding-top: 10px;
+	padding-bottom: 0px;
+	height: 300px;
+	width: 300px;
+}
+
+.blog{
+	height: 450px;
+}
